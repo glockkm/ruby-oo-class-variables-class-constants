@@ -5,9 +5,9 @@ class Shoe
   BRANDS = [] # class constant array accessible by all instances
 
   def initialize(brand)
-    @brand = brand
-    BRANDS << brand # push in brand into BRANDS ARRAY
-    BRANDS == BRANDS.uniq! # set BRANDS to only uniq in place BRANDS
+    @brand = brand # instance variable @brand set
+    BRANDS << brand # push in brand into BRANDS ARRAY. keeps track of all brands.
+    BRANDS == BRANDS.uniq! # set BRANDS to only uniq in place BRANDS. # keeps track of only unique brands
   end
 
   def cobble
